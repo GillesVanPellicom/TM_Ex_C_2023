@@ -9,13 +9,13 @@
 
 int readSize(int lowerBound, int upperBound);
 
-int populateArray(int *arr);
+int populateArray(int* arr);
 
-void printArray(const int *arr, int size);
+void printArray(const int* arr, int size);
 
-double calcArrayAverage(const int *arr, int size);
+double calcArrayAverage(const int* arr, int size);
 
-int calcArrayMax(const int *arr, int size);
+int calcArrayMax(const int* arr, int size);
 
 
 int main(void) {
@@ -54,7 +54,7 @@ int readSize(int lowerBound, int upperBound) {
  * @param arr array of integers
  * @return size of array
  */
-int populateArray(int *arr) {
+int populateArray(int* arr) {
     int size = 0;
     int res;
     printf("Please input numbers and end with 999");
@@ -76,7 +76,7 @@ int populateArray(int *arr) {
  * @param arr array of integers
  * @param size size of array
  */
-void printArray(const int *arr, int size) {
+void printArray(const int* arr, int size) {
     for (int i = 0; i < size; ++i) {
         printf("%d\n", arr[i]);
     }
@@ -88,7 +88,7 @@ void printArray(const int *arr, int size) {
  * @param size size of array
  * @return average of array
  */
-double calcArrayAverage(const int *arr, int size) {
+double calcArrayAverage(const int* arr, int size) {
     int total = 0;
     for (int i = 0; i < size; ++i) {
         total += arr[i];
@@ -102,7 +102,7 @@ double calcArrayAverage(const int *arr, int size) {
  * @param size size of array
  * @return largest int in arr
  */
-int calcArrayMax(const int *arr, int size) {
+int calcArrayMax(const int* arr, int size) {
     int max = 0;
     for (int i = 0; i < size; ++i) {
         if (arr[i] > max) {

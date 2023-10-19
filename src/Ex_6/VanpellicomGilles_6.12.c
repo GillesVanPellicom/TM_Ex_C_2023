@@ -15,7 +15,7 @@ void drawBar(int n, char c);
 int main(void) {
     // Define and initialize variables
     char symbol = '=';
-    int *arr = NULL;
+    int* arr = NULL;
     int length = 0;
     int capacity = 1;
 
@@ -24,7 +24,7 @@ int main(void) {
     scanf("%c", &symbol);
 
     // Allocate memory for dynamic array
-    arr = (int *) malloc(capacity * sizeof(int));
+    arr = (int*) malloc(capacity * sizeof(int));
 
     // If allocation fails, exit with error
     if (arr == NULL) {
@@ -40,7 +40,7 @@ int main(void) {
         if (length == capacity) {
             // Double capacity and reallocate
             capacity *= 2;
-            arr = (int *) realloc(arr, capacity * sizeof(int));
+            arr = (int*) realloc(arr, capacity * sizeof(int));
             // If reallocation fails, exit with error
             if (arr == NULL) {
                 fprintf(stderr, "Fatal: Memory reallocation for 'arr' failed.\n");
