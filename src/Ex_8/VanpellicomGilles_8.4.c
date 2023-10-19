@@ -6,7 +6,9 @@
 #include <ctype.h>
 
 bool isPalindrome(char *s);
+
 void strip(char *s, char c);
+
 void toLowerCase(char *s);
 
 
@@ -41,7 +43,7 @@ bool isPalindrome(char *s) {
 
     // Start and end of string counter
     int start = 0;
-    int end = (int) strlen(s)-1;
+    int end = (int) strlen(s) - 1;
 
     // While start and end not the same number
     while (start < end) {
@@ -93,7 +95,7 @@ void strip(char *s, char c) {
  * Changes all uppercase to lowercase in a string
  * @param s string
  */
-void toLowerCase(char *s){
+void toLowerCase(char *s) {
     // If string equals null, do nothing
     if (s == NULL) {
         return;
