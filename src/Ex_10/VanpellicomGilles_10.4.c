@@ -76,6 +76,7 @@ bool readIntegersInOrderAsc(int* arr, int n) {
  * (I could have implemented something more efficient, E.g. a binary search derivative,
  * but that's a lot of work for arrays with n <= 10.)
  * @param arr array to be manipulated
+ * @return true if success, false if fail.
  */
 bool insertIntegerInSortedArray(int* arr, int x, int length) {
     for (int i = 0; i < length; ++i) {
@@ -89,6 +90,14 @@ bool insertIntegerInSortedArray(int* arr, int x, int length) {
     return false;
 }
 
+/**
+ * Inserts an integer into an array by index.
+ * @param arr array to be manipulated
+ * @param x integer to be inserted
+ * @param index index of insertion
+ * @param length length of the array
+ * @return true if success, false if fail.
+ */
 bool insertInteger(int* arr, int x, int index, int length) {
     // Sketchy semi-secure check to see if insertion is possible.
     if (arr[length - 1] != 0) {
