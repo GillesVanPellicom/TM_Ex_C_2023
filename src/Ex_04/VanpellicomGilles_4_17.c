@@ -6,7 +6,7 @@ int main(void) {
 	double input[6];
 
 	// Ask and handle input
-	printf("Enter Ex_6 real numbers please: \n");
+	printf("Enter Ex_06 real numbers please: \n");
 	for (int i = 0; i < 6; ++i) {
 		scanf("%lf%*c", &input[i]);
 	}
