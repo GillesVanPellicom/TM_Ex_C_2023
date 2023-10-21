@@ -5,11 +5,11 @@
 #include <string.h>
 #include <ctype.h>
 
-bool isPalindrome(char *s);
+bool isPalindrome(char* s);
 
-void strip(char *s, char c);
+void strip(char* s, char c);
 
-void toLowerCase(char *s);
+void toLowerCase(char* s);
 
 
 int main(void) {
@@ -32,7 +32,7 @@ int main(void) {
  * @param s string
  * @return boolean
  */
-bool isPalindrome(char *s) {
+bool isPalindrome(char* s) {
     // Strip spaces and punctuation
     strip(s, ' ');
     strip(s, '.');
@@ -68,14 +68,14 @@ bool isPalindrome(char *s) {
  * @param s string
  * @param c character
  */
-void strip(char *s, char c) {
+void strip(char* s, char c) {
     // If string equals null, do nothing
     if (s == NULL) {
         return;
     }
 
-    char *readPtr = s;
-    char *writePtr = s;
+    char* readPtr = s;
+    char* writePtr = s;
 
     // While readPtr is not zero byte
     while (*readPtr) {
@@ -95,7 +95,7 @@ void strip(char *s, char c) {
  * Changes all uppercase to lowercase in a string
  * @param s string
  */
-void toLowerCase(char *s) {
+void toLowerCase(char* s) {
     // If string equals null, do nothing
     if (s == NULL) {
         return;
