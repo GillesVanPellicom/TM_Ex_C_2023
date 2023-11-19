@@ -14,7 +14,8 @@ int main(void) {
     print_string(s2);
     strcat(s1, s2);
     print_string(s1);
-
+    // U bent precies de return 0 vergeten in uw modelcode
+    return 0;
 }
 
 void print_string(char *c) {
