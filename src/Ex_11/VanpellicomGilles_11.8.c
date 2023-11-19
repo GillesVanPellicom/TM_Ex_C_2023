@@ -12,6 +12,7 @@ int main(void) {
     bool done = false;
     while (!done) {
         read(&v1, &v2);
+        // if both inputs are 0, stop the code.
         if (v1 == 0 && v2 == 0) {
             printf("Thanks!");
             done = true;
@@ -22,6 +23,11 @@ int main(void) {
     return 0;
 }
 
+/**
+ * Reads in two parameters and returns them by reference.
+ * @param multiplier Multiplier to be read in
+ * @param upperBound UpperBound to be read in
+ */
 void read(int* multiplier, int* upperBound) {
     printf("Enter the number you want to use for the table of multiplication:\n");
     scanf("%d%*c", multiplier);
@@ -29,6 +35,11 @@ void read(int* multiplier, int* upperBound) {
     scanf("%d%*c", upperBound);
 }
 
+/**
+ * Calculates and then prints a multiplication table until upperBound is met.
+ * @param multiplier Multiplier for the multiplication table.
+ * @param upperBound Upper bound for the table
+ */
 void calcPrint(const int* multiplier, const int* upperBound) {
     bool boundHit = false;
     int i = 1;
@@ -36,17 +47,23 @@ void calcPrint(const int* multiplier, const int* upperBound) {
     int sumOdd = 0;
     int sumEven = 0;
 
+    // While not at upperbound
     while (!boundHit) {
-        res = *multiplier * i++;
+        // result = post-increment i times the dereference of multiplier adress
+        res = i++ * *multiplier;
 
+        // If the result is greater than upperbound
         if (res > *upperBound) {
+            // Stop the loop
             boundHit = true;
         } else {
+            // Else if number is even and then if uneven, add to respective totals.
             if (res % 2 == 0) {
                 sumEven += res;
             } else {
                 sumOdd += res;
             }
+
             printf("%d\n",res);
         }
     }

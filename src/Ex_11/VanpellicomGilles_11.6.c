@@ -14,10 +14,15 @@ int main(void) {
     print_string(s2);
     strcat(s1, s2);
     print_string(s1);
-    // U bent precies de return 0 vergeten in uw modelcode
+    // U bent precies de return 0 vergeten in uw modelcode. 😋
+    // Voelt zo onnatuurlijk dat ik dat eens mag zeggen voor de verandering.
     return 0;
 }
 
+/**
+ * Prints out a string using putchar()
+ * @param c String
+ */
 void print_string(char *c) {
     while (*c != '\0') {
         putchar(*c);
