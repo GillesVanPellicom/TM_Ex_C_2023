@@ -42,7 +42,10 @@ int main(void) {
     // Close the file
     fclose(file);
 
-
-    printf("\nname: %s\nage: %d", pattern, age);
+    if (ageFound) {
+        printf("\nname: %s\nage: %d", pattern, age);
+    } else {
+        printf("There is no person with that name on record.");
+    }
     return 0;
 }
