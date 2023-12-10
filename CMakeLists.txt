@@ -29,3 +29,5 @@ add_executable(VanpellicomGilles_11.8 src/Ex_11/VanpellicomGilles_11.8.c)
 add_executable(VanpellicomGilles_14.11 src/Ex_14/VanpellicomGilles_14.11.c)
 add_executable(VanpellicomGilles_14.14 src/Ex_14/VanpellicomGilles_14.14.c)
 add_executable(DynamicArray Misc/DynamicArray.c)
+
+add_executable(VanpellicomGilles_15.5 src/Ex_15/VanpellicomGilles_15.5.c)
