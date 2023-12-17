@@ -32,3 +32,4 @@ add_executable(DynamicArray Misc/DynamicArray.c)
 
 add_executable(VanpellicomGilles_15.5 src/Ex_15/VanpellicomGilles_15.5.c)
 add_executable(VanpellicomGilles_15.6 src/Ex_15/VanpellicomGilles_15.6.c)
+add_executable(VanpellicomGilles16.3 src/Ex_16/VanpellicomGilles16.3.c)
